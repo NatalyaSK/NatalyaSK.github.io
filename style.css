@@ -1,0 +1,124 @@
+ /* I Natalya Skorokhodova, 000931882, certify that this material is 
+    my original work. No other person's work has been used
+    without due acknowledgment. I have not made my work
+    available to anyone else.
+*/
+
+/* Font for main & header */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .row {
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+/* Global styles */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Layout styles */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Navigation styles */
+.nav-wrap {
+  position: static; 
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  z-index: auto;
+}
+
+/* Navigation styles */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 20px;
+  padding-left: 20px !important;
+  border-radius: 90px;
+  background: rgba(30, 59, 38, 0.749);
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 0 25px #171717;
+}
+
+/* Link styles of navbar*/
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Link hover effect */
+.link:hover {
+  color: #fff;
+}
+
+/* Main content styles */
+.main{
+    min-height: 100%;
+    background: linear-gradient(
+    180deg,
+    #3d7a4e 0%,
+    #1e3b26 40%,
+    #0e1a14 70%,
+    #050505 100%
+  );
+}
+
+/* H elements styles */
+.position {
+    text-shadow: 5px 5px #000000;
+}
+
+/* H elements styles */
+.education{
+    text-shadow: 3px 3px #3d7a4e;
+}
+
+/* H elements styles */
+.qualification {
+    text-shadow: 3px 3px #3d7a4e;
+}
+
+/* Image styles */
+.home-image {
+    width: 300px;
+    height: 300px;
+}
+
+/* Button resume style */
+.button{
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Button resume style */
+.button:hover {
+    background-color: #1e3b26;
+    color: white;
+    transition: 0.3s ease-in-out;
+    border: 1px solid white;
+}
